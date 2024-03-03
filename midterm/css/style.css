@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: baseline;
+  font-weight: unset;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  background-color: #aad4cf;
+}
+
+body {
+  background-color: #d4e9e7;
+  width: 1025px;
+  height: 3000px;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+}
+h1 {
+  font-size: 40px;
+}
+.lone {
+  color: white;
+  position: absolute;
+  top: 195px;
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+}
+.star {
+  float: left;
+  margin: 0 20px 40px 0;
+  height: 256px;
+  width: 250px;
+}
+
+section {
+  padding: 10px;
+}
+
+article {
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+article h2 {
+  margin-bottom: 18px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+nav > ul > li {
+  flex: 1;
+  text-align: center;
+}
+
+nav > ul > li:not(:last-child):after {
+  content: "|";
+}
+
+nav > ul > li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+nav > ul > li > a:hover {
+  cursor: pointer;
+}
