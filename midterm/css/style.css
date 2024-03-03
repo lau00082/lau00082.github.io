@@ -49,22 +49,23 @@ h1 {
 }
 .star {
   float: left;
-  margin: 0 20px 40px 0;
+  margin: 0 20px 10px 0;
   height: 256px;
   width: 250px;
 }
 
 section {
-  padding: 10px;
+  padding: 25px 10px;
 }
 
 article {
-  line-height: 1.45;
+  line-height: 1.4;
   font-size: 16px;
 }
 
 h2 {
-  font-size: 34px;
+  margin-top: 15px;
+  font-size: 35px;
 }
 
 article h2 {
@@ -79,19 +80,21 @@ nav > ul {
 }
 
 nav > ul > li {
+  padding: 5px 0;
   flex: 1;
   text-align: center;
 }
 
 nav > ul > li:not(:last-child):after {
   content: "|";
+  transform: scale(0.5, 3);
 }
 
 nav > ul > li > a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 25px;
 }
 
 nav > ul > li > a:hover {
