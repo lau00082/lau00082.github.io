@@ -7,7 +7,7 @@
   vertical-align: baseline;
   font-weight: unset;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -29,7 +29,6 @@ html {
 body {
   background-color: #d4e9e7;
   width: 1025px;
-  height: 3000px;
   margin: 0 auto;
 }
 
@@ -49,13 +48,13 @@ h1 {
 }
 .star {
   float: left;
-  margin: 0 20px 10px 0;
+  margin: 0 20px 20px 0;
   height: 256px;
   width: 250px;
 }
 
 section {
-  padding: 25px 10px;
+  padding: 15px 10px;
 }
 
 article {
@@ -64,7 +63,7 @@ article {
 }
 
 h2 {
-  margin-top: 15px;
+  margin-top: 13.5px;
   font-size: 35px;
 }
 
@@ -82,7 +81,9 @@ nav > ul {
 nav > ul > li {
   padding: 5px 0;
   flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 nav > ul > li:not(:last-child):after {
@@ -91,6 +92,8 @@ nav > ul > li:not(:last-child):after {
 }
 
 nav > ul > li > a {
+  flex: 1;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -99,4 +102,90 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
   cursor: pointer;
+}
+
+section#facts {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section#facts ul {
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+section#form {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section#form > form {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  padding: 25px 15px;
+  gap: 15px;
+}
+
+section#form > form .input-gp {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section#form > form .radio-gp {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+section#form > form > input[type="submit"] {
+  width: fit-content;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+footer {
+  padding: 25px 30px 35px 0;
+  margin-bottom: 20px;
+}
+
+footer p#copyright {
+  text-align: right;
+}
+
+h3 {
+  font-size: 29px;
+}
+
+section#form > form input[type="text"],
+section#form > form input[type="email"],
+section#form > form textarea {
+  padding: 3px;
+  border: solid 1px #cccccc;
+}
+section#form > form textarea[type="message"],
+section#form > form textarea {
+  resize: none;
+  height: 100px;
+  border: solid 1px #737373;
+}
+
+.input-gp > p {
+  font-size: 23px;
+  padding: 15px 0 25px 0;
+}
+
+.opt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+section#form input[type="submit"] {
+  background: none;
+  font-size: 11px;
 }
