@@ -5,6 +5,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: "Open Sans", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -43,8 +44,243 @@ table {
   border-spacing: 0;
 }
 
-header {
-  background-color: #c78b08;
-  margin: 17px 17px;
-  padding: 80px;
+.container {
+  max-width: 1200px;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.main-banner {
+  background-position: center;
+  height: 600px;
+  background-image: url("/final-project/images/main-banner.jpg");
+  background-size: 100%;
+  color: white;
+}
+
+.main-banner h1 {
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+nav ul li {
+  padding: 1.5rem 2rem;
+  color: #c78c06;
+}
+nav ul li:hover {
+  color: #222;
+  background-color: #c78c06;
+}
+nav ul {
+  font-size: 1.3rem;
+}
+.searchicon {
+  border: 1.5px solid #c78c06;
+  fill: #c78c06;
+  padding: 5px 5px 15px 5px;
+}
+#search {
+  /* padding: 12px;
+  width: 13rem; */
+}
+
+.bg-main {
+  background-color: #c78c06;
+}
+.bg-second {
+  background-color: #ffe6ac;
+}
+.bg-third {
+  background-color: #222;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-four {
+  background-color: rgb(34, 34, 34, 0.6);
+}
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.align-items-center {
+  align-items: center;
+}
+/* margin */
+.m-0 {
+  margin: 0 !important;
+}
+.m-1 {
+  margin: 0.25rem !important;
+}
+.m-2 {
+  margin: 0.5rem !important;
+}
+.m-3 {
+  margin: 1rem !important;
+}
+.m-4 {
+  margin: 1.5rem !important;
+}
+.m-5 {
+  margin: 3rem !important;
+}
+.mx-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+.mx-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.mx-3 {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+.mx-4 {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+.mx-5 {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-1 {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* padding */
+.p-1 {
+  padding: 0.25rem !important;
+}
+.p-2 {
+  padding: 0.5rem !important;
+}
+.p-3 {
+  padding: 1rem !important;
+}
+.p-4 {
+  padding: 1.5rem !important;
+}
+.p-5 {
+  padding: 3rem !important;
+}
+
+.px-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+.px-3 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.px-4 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+.px-5 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+.py-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+@media (min-width: 760px) {
 }
